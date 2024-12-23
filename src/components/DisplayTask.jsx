@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function DisplayTask({ allTasks, updateTasks }) {
   const handleDelete = (id) => {
     let newAllTasks = allTasks.filter((task) => (task.id != id ? task : null));
